@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .container{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #67c23a;
+            background: #fff;
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            top:20%;
+            padding: 5px;
+            overflow: hidden;
+        }
+        .small{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: linear-gradient(-180deg,#aaff80 13%,#67c23a 91%)
+        }
+        .mask{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 40%;
+            background: rgba(255,255,255, 0.9);
+            left: 50%;
+            top: 0;
+            transform:  translate(-50%,-75%) rotate(0);
+            z-index: 2;
+            animation: dong 10s linear -5s infinite
+        }
+        @keyframes dong{
+            50%{
+                transform: translate(-50%,-75%) rotate(180deg);
+            }
+            100%{
+                transform: translate(-50%,-75%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="small"></div>
+        <div class="mask"></div>
+    </div>
+</body>
+</html>

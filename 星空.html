@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background: #000;
+        }
+        #wrapper{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50px;
+            left: 80%;
+            margin-left: -100px;
+            /* background: #fff;
+            border-radius: 50%; */
+            animation: move 30s linear;
+            z-index: 100;
+        }
+        @keyframes move{
+            0%{
+                top:200px;
+                left: 0%;
+                opacity: 0;
+            }
+            40%{
+                top:100px;
+                left: 40%;
+                opacity: 0.5;
+            }
+            80%{
+                top:50px;
+                left: 80%;
+                opacity: 1;
+            }
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            background: #efefef;
+            border-radius: 50%;
+            box-shadow: 0 0 40px #fff;
+            animation: moonmove 30s linear;
+        }
+        @keyframes moonmove{
+            0%{
+                box-shadow: 0 0 10px #fff;
+            }
+            50%{
+                box-shadow: 0 0 25px #fff;
+            }
+            100%{
+                box-shadow: 0 0 40px #fff;
+            }
+        }
+        span{
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            animation: dong 1s alternate infinite;
+        }
+        @keyframes dong{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        span:hover{
+            transform: scale(3,3) rotate((180deg));
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="circle">
+        </div>
+    </div>
+    <span></span>
+    <script>
+        window.onload=function(){
+            // var xin=document.getElementsByTagName('span')[0]
+            var screew=document.documentElement.clientWidth;
+            var screeh=document.documentElement.clientHeight;
+
+            var xinArr=[]
+            for(var i=0;i<200;i++){
+                var span=document.createElement('span');
+                document.body.appendChild(span);
+                var x=parseInt(Math.random()*screew);
+                var y=parseInt(Math.random()*screeh);
+                span.style.top=y+'px';
+                span.style.left=x+'px';
+
+                var scale=Math.random()*1.5
+                span.style.transform="scale("+scale+","+scale+")"
+            var rate=Math.random()*1.5;
+            span.style.animationDelay=rate+'s'
+            }
+        }
+    </script>
+</body>
+</html>
