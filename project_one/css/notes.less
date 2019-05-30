@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container-fluid{
+    // background: blue;
+    padding: 0;
+    background-image: url(../images/notes_images/notes_bann1.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.bann{
+        .btn1{
+            margin-top: 220px;
+            font-size: 14px;
+            color: #4568bc;
+            border-radius: 20px;
+            background-color: white;
+            opacity: .8 ;
+            &:hover{
+                background: #ffac00;
+                color: white;
+                opacity: 1 ;
+            }
+        }
+        .btn2{
+            width: 132px;
+            margin-top: 220px;
+            margin-left: 50px;
+            font-size: 14px;
+            color: #4568bc;
+            border-radius: 20px;
+            background-color: white;
+            opacity: .8 ;
+            &:hover {
+                background: #ffac00;
+                color: white;
+                opacity: 1 ;
+            }
+        }
+}
+.container{
+
+    .title{
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+        display: inline-block;
+        h3{
+            margin: 0;
+        }
+        .btn{
+            border-radius: 16px;
+            &:hover{
+                background: #ffac00;
+            }
+        }
+    }
+}
+.shadow{
+    margin-top: 20px;
+    &:hover .mengbg{
+        height: 100%;
+    }
+        position: relative;
+        h2{
+            position: absolute;
+            bottom: 0%;
+            color: white;
+            padding:0 10px;
+            transition: .5s linear;
+            }
+        >img{
+            width: 100%;
+        }
+        .mengbg{
+            width: 100%;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            bottom: 0%;
+            transition: .5s linear;
+        }
+        .mask{
+            width: 250px;
+            height: 100px;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+            // top: 50%;
+            text-align: center;
+            color: white;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+           bottom: -100px;
+            transition: .5s linear;
+            h4{
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        }
+
+    &:hover .mask{
+    bottom: 25%;
+    transform: translate(-50% -50%);
+    }
+    &:hover h2{
+        bottom: 80%;
+        opacity: 0;
+    }
+
+}
+.youji{
+    margin-top: 20px;
+    transition: 1s;
+     border: 0.5px solid #e3e3e3;
+     &:hover{
+         border-color: #ffac00;
+         box-shadow: #ffac00 1px 1px 10px;
+     }
+     >img{
+         width: 100%;
+     }
+    .imag{
+        overflow: hidden;
+        position: relative;
+       
+        img{
+            transition: 1s;
+            transform: scale(1);
+            &:hover{
+                transform: scale(1.5);
+            } 
+        }
+        
+    }
+
+    
+    .time{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        display: inline-block;
+        h6{
+            padding: 0;
+            position: absolute;
+            color: white;
+            font-size: 14px;
+            margin: 0;
+            padding: 0 10px;
+            
+        }
+        .pull-right{
+            p{
+                margin: 0;
+                margin-right: 10px;
+            }
+        }
+
+    }
+    .txt{
+        width: 100%;
+        p{
+            margin-bottom: 0;
+        }
+        a{
+            color: black;
+            &:hover{
+                color: #ffac00;
+            }
+        }
+        .lvx{
+           padding: 0 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        
+        }
+        .yonghu{
+            padding: 0 10px;
+            margin-top: 5px;
+            a{
+                padding-left: 20px;
+                vertical-align: middle;
+            }
+            .img-circle{
+                width: 25px;
+                height: 25px;
+                vertical-align: middle;
+            }
+        }
+        .dianzan{
+            width: 100%;
+            color: #999999;
+            padding:0 10px;
+            margin-top: 5px;
+            border-top: 0.5px solid #e3e3e3;
+            a{
+                display: inline-block;
+                text-align: center;
+                padding:5px 25px;
+                color: #999999;
+                &:hover{
+                    color: #ffac00;
+                }
+            }
+        }
+
+    }
+    
+   
+}
+.yema{
+    text-align: center;
+    .active{ 
+    a{
+        border-color: #ddd;
+        background-color: #ffac00;
+    }
+    &:hover a{
+        border-color: #ddd;
+        background-color: #ffac00;
+    }
+}
+    li{
+        a{
+            color: #000;
+        }
+        &:hover a{
+            color: white;
+            background-color: #ffac00;
+        }
+    }
+    .seng{
+        text-align: center;
+        a{
+            border: 0;
+            padding: 0;
+            text-align: center;
+        }
+    }
+}

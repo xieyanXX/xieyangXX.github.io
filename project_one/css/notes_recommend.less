@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    background: #e3e3e3;
+    a{
+        color: black;
+        &:hover{
+            color: #ffac00;
+        }
+    }
+    p{
+        display: inline-block;
+        margin: 10px 0 10px;
+        &:nth-child(3){
+            color: #666;
+        }
+
+        
+    }
+
+}
+.container-fluid{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(../images/notes_recommend_images/bann2.jpg);
+    .zhinan{
+       
+        line-height: 100%;
+        padding: 10px 15px;
+        margin:0 auto;
+        text-align: center;
+        background-color:rgba(0, 0, 0, 0.6);
+        width: 40%;
+        color: white;
+        margin-top: 50px;
+        .txt{
+            text-align: left;
+        }
+        .address{
+            border-top:1px dashed white;
+            text-align: left;
+            a{
+                color: white;
+                &:hover{
+                    color: #ffac00;
+                }
+            }
+        }
+    }
+}
+@media (max-width:920px){
+    .container-fluid .txt{
+        display:none;
+    }
+    .container-fluid .zhinan{
+        width: 50%;
+    }
+    .addtxt{
+    white-space: nowrap;
+
+    }
+}
+@media (max-width:720px){
+    .container-fluid .txt{
+        display:none;
+    }
+    .container-fluid .zhinan{
+        width: 60%;
+    }
+    .addtxt{
+    white-space: nowrap;
+    
+    }
+}
+.jieshao{
+    background: white;
+    margin-top: 10px;
+    .bgtu{
+        >img{
+            width: 100%;
+        }
+    }
+.xiaotu{
+    margin-top: 5px;
+    li{
+        padding: 0;
+        display: inline-block;
+        
+    }
+    .col-lg-5{
+        img{
+            width: 100%;
+            height: 137px;
+        }
+    }
+}
+}
+.lasatxt{
+    p{
+        margin: 0;
+    }
+    h5{
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    h4{
+        margin-top: 25px;
+        font-weight: bold;
+    }
+    span{
+        color: #ffac00;
+    }
+    .mon{
+        background: #e3e3e3;
+        margin-top: 10px;
+        display: inline-block;
+        .left{
+            width: 85%;
+            float: left;
+        }
+        .right{
+            width: 15%;
+            float: right;   
+        }
+    }
+    .tuijian{
+        h4{
+            margin: 0;
+            height: 30px;
+            line-height: 30px;
+        }
+        .btn{
+            border-radius: 16px;
+            &:hover{
+                background-color: #ffac00;
+                color: white;
+                border-color: white; 
+            }
+        }
+    }
+    .touxiang{
+        display: inline-block;
+        .img{
+            float: left;
+            width: 20%;
+
+            margin-top: 10%;
+            vertical-align: middle;
+        }
+        .set{
+            float: right;
+            width: 80%;
+        }
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width:1200px){
+    .xiaotu{
+        display: none;
+    }
+}
